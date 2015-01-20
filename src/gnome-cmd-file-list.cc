@@ -182,8 +182,8 @@ struct GnomeCmdFileList::Private
 
 GnomeCmdFileList::Private::Private(GnomeCmdFileList *fl)
 {
-    memset(column_pixmaps, NULL, sizeof(column_pixmaps));
-    memset(column_labels, NULL, sizeof(column_labels));
+    memset(column_pixmaps, 0, sizeof(column_pixmaps));
+    memset(column_labels, 0, sizeof(column_labels));
 
     quicksearch_popup = NULL;
     selpat_dialog = NULL;
